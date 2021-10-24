@@ -9,22 +9,38 @@ body {
   background-color: #ffffff;
 }
 
-h1.MuiTypography-root {
+h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #badc58;
   font-size: 2rem;
+  margin: 0;
 }
 
-h2.MuiTypography-root {
+h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 3rem;
   color: #1d164d;
 }
 
-fieldset.MuiOutlinedInput-notchedOutline {
-  border-color: #1d164d;
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #1d164d;
+}
+
+
+p {
+  color: #9a93a8;
+  font-size: 1rem;
+}
+
+input {
+  border: 1px solid #1d164d;
+  border-radius: 5px;
+  padding: 1rem 3rem 1rem 1rem;
 }
 
 a {
@@ -43,10 +59,17 @@ a.MuiButton-root {
   font-weight: 700;
 }
 
-button.MuiButton-root {
+button {
   padding: 1rem;
   margin-left: 1rem;
   background-color: #badc58;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+svg {
+  color: #ffffff;
 }
 
 * {

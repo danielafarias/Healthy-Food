@@ -7,14 +7,60 @@
 
 .introduction_header {
   padding: 2rem 8rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .introduction_search {
-  margin: 20rem 8rem;
+  padding-top: 6rem;
+  padding-left: 8rem;
+  padding-bottom: 15rem;
+}
+
+.introduction_button {
+  background-color: #ffffff;
+  color: #badc58;
+  padding: 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
 }
 
 .recipes {
   background-color: #fafafc;
+  padding: 2rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipes_card {
+  margin: 2rem 2rem;
+  box-shadow: 2px 2px 20px #00000023;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.recipes_card_body {
+  background: cover;
+}
+
+.recipes_card_title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #1d164d;
+  margin: 1rem;
+}
+
+.recipes_card_button {
+  color:#ffffff;
+  white-space: nowrap;
+}
+
+.recipes_container {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .services {
@@ -22,4 +68,17 @@
   background-repeat: no-repeat;
   background-position: left;
   background-attachment: scroll;
+}
+
+.services_container {
+  padding: 6rem 8rem 6rem 45rem;
+}
+
+.services_paragraph {
+  padding-bottom: 1rem;
+}
+
+.services_button {
+  color: #ffffff;
+  margin: 0;
 }

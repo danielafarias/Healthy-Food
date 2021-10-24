@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../../styles/Home.module.css";
+import styles from "../../styles/Home.module.scss";
 import SearchIcon from "@mui/icons-material/Search";
 import React from "react";
 import { Container, Row, Col, Button, Form, Card } from "react-bootstrap";

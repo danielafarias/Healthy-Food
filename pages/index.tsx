@@ -1,14 +1,15 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 import SearchIcon from "@mui/icons-material/Search";
 import React from "react";
 import Introduction from "../components/home/introduction";
 import Recipes from "../components/home/recipes";
 import Services from "../components/home/services";
 import Blog from "../components/home/blog";
-
+import Membership from "../components/home/membership";
+import Footer from "../components/footer";
 const Home: NextPage = () => {
 
   return (
@@ -24,9 +25,10 @@ const Home: NextPage = () => {
         <Recipes/>
         <Services/>
         <Blog/>
+        <Membership/>
       </main>
 
-      <footer className={styles.footer}></footer>
+      <Footer/>
     </div>
   );
 };

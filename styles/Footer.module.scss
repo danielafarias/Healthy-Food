@@ -1,0 +1,19 @@
+.footer {
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+
+  &_copyright {
+    color: #1d164d;
+    font-weight: 500;
+  }
+
+  &_terms {
+    color: #9a93a8;
+    font-weight: 500;
+
+    small {
+        margin-right: 1rem;
+    }
+  }
+}

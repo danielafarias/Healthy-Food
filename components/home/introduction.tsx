@@ -1,4 +1,4 @@
-import styles from "../../styles/Home.module.css";
+import styles from "../../styles/Home.module.scss";
 import React from "react";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import { GoSearch } from "react-icons/go";

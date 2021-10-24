@@ -1,16 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.05em;
   background-color: #ffffff;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #badc58;
   font-size: 2rem;
@@ -18,19 +23,18 @@ h1 {
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 3rem;
   color: #1d164d;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   color: #1d164d;
 }
-
 
 p {
   color: #9a93a8;
@@ -41,6 +45,7 @@ input {
   border: 1px solid #1d164d;
   border-radius: 5px;
   padding: 1rem 3rem 1rem 1rem;
+  font-family: "Quicksand", sans-serif;
 }
 
 a {
@@ -55,7 +60,7 @@ a {
 
 a.MuiButton-root {
   background-color: #ffffff;
-  color:#badc58;
+  color: #badc58;
   font-weight: 700;
 }
 
@@ -70,8 +75,4 @@ button {
 
 svg {
   color: #ffffff;
-}
-
-* {
-  box-sizing: border-box;
 }

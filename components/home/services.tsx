@@ -4,7 +4,7 @@ import { Container, Row, Col, Button, Form, Card } from "react-bootstrap";
 
 export default function Recipes() {
   return (
-    <section className={styles.services}>
+    <section id="services" className={styles.services}>
           <Container className={styles.services_container}>
             <Row>
               <h3 className={styles.services_title}>

@@ -157,3 +157,72 @@
     }
   }
 }
+
+@media (max-width: 1219px) {
+  .introduction {
+    &_header {
+      background-image: linear-gradient(to right, #1d164d, #494875);
+      border: 0px solid;
+      border-image-source: linear-gradient(to bottom right, #FFF1EA, #1d164db4, #6258a3b4, #402eb6b4);
+    }
+  
+    &_search {
+      background-image: linear-gradient(to right, #ffffff, #ffffff7a);
+    }
+  }
+
+  .services {
+  
+    &_container {
+      background-image: linear-gradient(to left, #ffffff, #ffffff00);
+      padding: 6rem 4rem 6rem 30rem;
+      text-align: end;
+    }
+  }
+
+  .membership {
+  
+    &_search {
+      background-image: linear-gradient(to right, #ffffff, #ffffff33);
+    }
+  }
+}
+
+@media (max-width: 869px) { 
+  .main {
+    width: 900px;
+  }
+  .introduction {
+    &_header {
+      display: flex;
+      flex-direction: column;
+      
+
+      nav {
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  .services {
+  
+    &_container {
+      background-image: linear-gradient(to left, #ffffff, #ffffff00);
+      padding: 6rem 8rem 6rem 30rem;
+      text-align: end;
+    }
+  }
+
+  .blog {
+    &_group {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    &_card {
+      margin-bottom: 2rem;
+    }
+  }
+}

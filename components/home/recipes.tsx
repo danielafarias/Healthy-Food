@@ -6,7 +6,7 @@ import { Container, Row, Col, Button, Form, Card } from "react-bootstrap";
 
 export default function Recipes() {
   return (
-    <section className={styles.recipes}>
+    <section id="recipes" className={styles.recipes}>
       <h3>Our Best Recipes</h3>
       <p>
         Far far away, behind the word mountains, far from the countries Vokalia

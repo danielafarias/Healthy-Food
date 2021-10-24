@@ -5,7 +5,7 @@ import { GoSearch } from "react-icons/go";
 
 export default function Membership() {
   return (
-    <section className={styles.membership}>
+    <section id="membership" className={styles.membership}>
       <div className={styles.membership_search}>
         <Container>
           <Row>

@@ -5,15 +5,15 @@ import { GoSearch } from "react-icons/go";
 
 export default function Introduction() {
   return (
-    <section className={styles.introduction}>
+    <section id="introduction" className={styles.introduction}>
       <div className={styles.introduction_header}>
         <h1>Healthy Food</h1>
 
         <nav>
-          <a href="#">Healthy Recipes</a>
-          <a href="#">Blog</a>
-          <a href="#">Join</a>
-          <Button className={styles.introduction_button} href="#">Register</Button>
+          <a href="#recipes">Healthy Recipes</a>
+          <a href="#blog">Blog</a>
+          <a href="#membership">Join</a>
+          <Button className={styles.introduction_button} href="/register">Register</Button>
         </nav>
       </div>
       <div className={styles.introduction_search}>

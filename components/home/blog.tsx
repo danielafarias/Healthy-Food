@@ -5,7 +5,7 @@ import CardCarousel from "./carousel";
 
 export default function Blog() {
   return (
-    <section className={styles.blog}>
+    <section id="blog" className={styles.blog}>
       <h3 className={styles.blog_title}>Read Our Blog</h3>
       <p className={styles.blog_paragraph}>
         Far far away, behind the word mountains, far from the countries Vokalia

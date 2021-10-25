@@ -14,7 +14,8 @@ export default function Register() {
   const [HouseNumber, setHouseNumber] = React.useState("");
   const [City, setCity] = React.useState("");
   const [State, setState] = React.useState("");
-  const [Terms, setTerms] = React.useState(false);
+
+  const [completeAddress, setCompleteAddress] = React.useState("");
 
   const [validated, setValidated] = React.useState(false);
 
@@ -27,6 +28,24 @@ export default function Register() {
 
     setValidated(true);
   };
+
+  const ZipCode = () => {
+    getZip(Zip).then((res: any) => setCompleteAddress(res));
+  };
+
+  // const response = completeAddress;
+
+  // console.log(response);
+
+  // response.map((data: any) => (
+  //     console.log(data)
+  // ))
+
+  Object.keys(completeAddress).forEach((key: any) => {
+    if (completeAddress.key === "logradouro") {
+        console.log("Found.");
+    }
+});
 
   return (
     <div>
@@ -141,6 +160,7 @@ export default function Register() {
                       name="zip"
                       value={Zip}
                       onChange={(e) => setZip(e.target.value)}
+                      onBlur={ZipCode}
                     />
                     <Form.Control.Feedback
                       type="invalid"
@@ -165,36 +185,11 @@ export default function Register() {
                     </Form.Label>
                     <Form.Control
                       type="text"
-                      required
-                      placeholder="Enter your Address"
+                      disabled
+                      placeholder="This field will be filled"
                       name="address"
                       value={Address}
                       onChange={(e) => setAddress(e.target.value)}
-                    />
-                    <Form.Control.Feedback
-                      type="invalid"
-                      className="error_message"
-                    >
-                      This field is required.
-                    </Form.Control.Feedback>
-                  </Form.Group>
-                </Col>
-
-                <Col>
-                  <Form.Group
-                    className={styles.form_group}
-                    controlId="formBasicHouseNumber"
-                  >
-                    <Form.Label className={styles.form_group_label}>
-                      House Number
-                    </Form.Label>
-                    <Form.Control
-                      type="number"
-                      required
-                      placeholder="Enter your House Number"
-                      name="houseNumber"
-                      value={HouseNumber}
-                      onChange={(e) => setHouseNumber(e.target.value)}
                     />
                     <Form.Control.Feedback
                       type="invalid"
@@ -217,8 +212,8 @@ export default function Register() {
                     </Form.Label>
                     <Form.Control
                       type="text"
-                      required
-                      placeholder="Enter your City"
+                      disabled
+                      placeholder="This field will be filled"
                       name="city"
                       value={City}
                       onChange={(e) => setCity(e.target.value)}
@@ -242,8 +237,8 @@ export default function Register() {
                     </Form.Label>
                     <Form.Control
                       type="text"
-                      required
-                      placeholder="Enter your State"
+                      disabled
+                      placeholder="This field will be filled"
                       name="state"
                       value={State}
                       onChange={(e) => setState(e.target.value)}

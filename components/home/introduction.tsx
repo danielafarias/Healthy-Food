@@ -13,7 +13,9 @@ export default function Introduction() {
           <a href="#recipes">Healthy Recipes</a>
           <a href="#blog">Blog</a>
           <a href="#membership">Join</a>
-          <Button className={styles.introduction_button} href="/register">Register</Button>
+          <Button className={styles.introduction_button} href="/register">
+            Register
+          </Button>
         </nav>
       </div>
       <div className={styles.introduction_search}>

@@ -1,5 +1,5 @@
 import styles from "../styles/Register.module.scss";
-import React, { ReactEventHandler } from "react";
+import React from "react";
 import Head from "next/head";
 import Footer from "../components/footer";
 import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
@@ -16,8 +16,6 @@ export default function Register() {
 
   const [completeAddress, setCompleteAddress] = React.useState([]);
 
-  const [validated, setValidated] = React.useState(false);
-
   const LocalStorage = async () => {
     localStorage.setItem("Nome", Name);
     localStorage.setItem("Data de Nascimento", Birthdate);
@@ -28,7 +26,6 @@ export default function Register() {
     localStorage.setItem("Estado", State);
   };
 
- 
   const ZipCode = () => {
     getZip(Zip).then((res: any) => setCompleteAddress(res));
   };
@@ -41,15 +38,9 @@ export default function Register() {
     setAddress(address);
     setCity(city);
     setState(state);
-
-   
   });
 
   console.log(Address);
-
-  // response.map((data: any) => (
-  //     console.log(data)
-  // ))
 
   return (
     <div>
@@ -64,14 +55,10 @@ export default function Register() {
 
       <main className={styles.main}>
         <a href="/">
-        <h1>Healthy Food</h1>
+          <h1>Healthy Food</h1>
         </a>
 
-        <Form
-          className={styles.form}
-          noValidate
-          validated={validated}
-        >
+        <Form className={styles.form} noValidate>
           <div className={styles.form_glass}>
             <h2>Register</h2>
             <Container>
@@ -255,7 +242,9 @@ export default function Register() {
 
             {Name && Birthdate && CPF && Zip && Address ? (
               <div className={styles.form_actions}>
-                <a className={styles.form_link} href="/">Back</a>
+                <a className={styles.form_link} href="/">
+                  Back
+                </a>
 
                 <Button
                   className={styles.form_button}

@@ -1,7 +1,6 @@
 import styles from "../../styles/Home.module.scss";
 import React from "react";
-import { Container, Row, Col, Button, Form } from "react-bootstrap";
-import { GoSearch } from "react-icons/go";
+import { Container, Row, Button, Form } from "react-bootstrap";
 
 export default function Membership() {
   return (
@@ -16,9 +15,7 @@ export default function Membership() {
           </Row>
           <Row>
             <Form.Control placeholder="Enter your email address" />
-            <Button className={styles.membership_search_button}>
-              Join
-            </Button>
+            <Button className={styles.membership_search_button}>Join</Button>
           </Row>
         </Container>
       </div>

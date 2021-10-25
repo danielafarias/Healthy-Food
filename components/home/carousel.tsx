@@ -1,15 +1,6 @@
 import styles from "../../styles/Home.module.scss";
 import React from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  Form,
-  Card,
-  CardGroup,
-  Image,
-} from "react-bootstrap";
+import { Card, CardGroup } from "react-bootstrap";
 
 export default function CardCarousel() {
   return (

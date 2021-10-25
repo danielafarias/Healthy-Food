@@ -1,6 +1,6 @@
 import styles from "../../styles/Home.module.scss";
 import React from "react";
-import { Container, Row, Col, Button, Form, Card } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import CardCarousel from "./carousel";
 
 export default function Blog() {
@@ -13,7 +13,7 @@ export default function Blog() {
       </p>
       <Container className={styles.blog_container}>
         <Row>
-          <CardCarousel/>
+          <CardCarousel />
         </Row>
       </Container>
     </section>

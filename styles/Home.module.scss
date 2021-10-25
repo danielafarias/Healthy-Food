@@ -152,7 +152,7 @@
     padding: 15rem 0 15rem 8rem;
 
     &_button {
-      color:#ffffff;
+      color: #ffffff;
       padding: 1rem 2rem;
     }
   }
@@ -163,16 +163,21 @@
     &_header {
       background-image: linear-gradient(to right, #1d164d, #494875);
       border: 0px solid;
-      border-image-source: linear-gradient(to bottom right, #FFF1EA, #1d164db4, #6258a3b4, #402eb6b4);
+      border-image-source: linear-gradient(
+        to bottom right,
+        #fff1ea,
+        #1d164db4,
+        #6258a3b4,
+        #402eb6b4
+      );
     }
-  
+
     &_search {
       background-image: linear-gradient(to right, #ffffff, #ffffff7a);
     }
   }
 
   .services {
-  
     &_container {
       background-image: linear-gradient(to left, #ffffff, #ffffff00);
       padding: 6rem 4rem 6rem 30rem;
@@ -181,30 +186,32 @@
   }
 
   .membership {
-  
     &_search {
       background-image: linear-gradient(to right, #ffffff, #ffffff33);
     }
   }
 }
 
-@media (max-width: 869px) { 
+@media (max-width: 869px) {
   .main {
     width: 1000px;
 
-     h1 {
-       font-size: 60px;
-     }
+    h1 {
+      font-size: 60px;
+    }
 
-     a, input, p, button, div {
+    a,
+    input,
+    p,
+    button,
+    div {
       font-size: 25px;
-     }
+    }
   }
   .introduction {
     &_header {
       display: flex;
       flex-direction: column;
-      
 
       nav {
         margin-top: 4rem;
@@ -213,7 +220,6 @@
   }
 
   .services {
-  
     &_container {
       background-image: linear-gradient(to left, #ffffff, #ffffff00);
       padding: 6rem 6rem 6rem 30rem;

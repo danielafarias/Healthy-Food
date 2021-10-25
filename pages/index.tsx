@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Healthy Food | Home</title>
         <meta name="description" content="Healthy Food Commerce Landing Page" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/icon2.svg" />
       </Head>
 
       <main className={styles.main}>

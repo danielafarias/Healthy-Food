@@ -14,7 +14,7 @@ export default function Register() {
           name="description"
           content="Healthy Food Commerce Register Page"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/icon2.svg" />
       </Head>
 
       <main className={styles.main}>

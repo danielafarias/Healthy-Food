@@ -38,12 +38,22 @@
     }
   }
 
+  &_actions {
+    margin-top: 1rem;
+  }
+
+  &_link {
+    color: #1d164d;
+  }
+
   &_button {
     color: #badc58;
     font-size: 1rem;
     font-weight: 700;
     margin: 2rem 0;
-    background-color: #ffffff;
+    background-color: #1d164d;
+    padding: 0.7rem 1rem;
+    border-radius: 3px;
   }
 }
 
@@ -59,5 +69,28 @@
 @media (max-width: 869px) {
   .main {
     width: 1000px;
+
+     h1 {
+       font-size: 60px;
+     }
+
+     a, input, p, button, div, label {
+      font-size: 40px;
+     }
   }
 }
+
+@media (max-width: 400px) {
+  .main {
+    width: 1000px;
+
+     h1 {
+       font-size: 60px;
+     }
+
+     a, input, p, button, div, label {
+      font-size: 50px;
+     }
+  }
+}
+

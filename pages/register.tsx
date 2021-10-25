@@ -11,41 +11,45 @@ export default function Register() {
   const [CPF, setCPF] = React.useState("");
   const [Zip, setZip] = React.useState("");
   const [Address, setAddress] = React.useState("");
-  const [HouseNumber, setHouseNumber] = React.useState("");
   const [City, setCity] = React.useState("");
   const [State, setState] = React.useState("");
 
-  const [completeAddress, setCompleteAddress] = React.useState("");
+  const [completeAddress, setCompleteAddress] = React.useState([]);
 
   const [validated, setValidated] = React.useState(false);
 
-  const handleSubmit = (event: any) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-
-    setValidated(true);
+  const LocalStorage = async () => {
+    localStorage.setItem("Nome", Name);
+    localStorage.setItem("Data de Nascimento", Birthdate);
+    localStorage.setItem("CPF", CPF);
+    localStorage.setItem("CEP", Zip);
+    localStorage.setItem("Endereço", Address);
+    localStorage.setItem("Cidade", City);
+    localStorage.setItem("Estado", State);
   };
 
+ 
   const ZipCode = () => {
     getZip(Zip).then((res: any) => setCompleteAddress(res));
   };
 
-  // const response = completeAddress;
+  React.useEffect(() => {
+    const address = completeAddress["logradouro"];
+    const city = completeAddress["localidade"];
+    const state = completeAddress["uf"];
 
-  // console.log(response);
+    setAddress(address);
+    setCity(city);
+    setState(state);
+
+   
+  });
+
+  console.log(Address);
 
   // response.map((data: any) => (
   //     console.log(data)
   // ))
-
-  Object.keys(completeAddress).forEach((key: any) => {
-    if (completeAddress.key === "logradouro") {
-        console.log("Found.");
-    }
-});
 
   return (
     <div>
@@ -59,13 +63,14 @@ export default function Register() {
       </Head>
 
       <main className={styles.main}>
+        <a href="/">
         <h1>Healthy Food</h1>
+        </a>
 
         <Form
           className={styles.form}
           noValidate
           validated={validated}
-          onSubmit={handleSubmit}
         >
           <div className={styles.form_glass}>
             <h2>Register</h2>
@@ -187,16 +192,10 @@ export default function Register() {
                       type="text"
                       disabled
                       placeholder="This field will be filled"
-                      name="address"
+                      name="city"
                       value={Address}
-                      onChange={(e) => setAddress(e.target.value)}
+                      defaultValue={Address}
                     />
-                    <Form.Control.Feedback
-                      type="invalid"
-                      className="error_message"
-                    >
-                      This field is required.
-                    </Form.Control.Feedback>
                   </Form.Group>
                 </Col>
               </Row>
@@ -216,7 +215,7 @@ export default function Register() {
                       placeholder="This field will be filled"
                       name="city"
                       value={City}
-                      onChange={(e) => setCity(e.target.value)}
+                      defaultValue={City}
                     />
                     <Form.Control.Feedback
                       type="invalid"
@@ -241,7 +240,7 @@ export default function Register() {
                       placeholder="This field will be filled"
                       name="state"
                       value={State}
-                      onChange={(e) => setState(e.target.value)}
+                      defaultValue={State}
                     />
                     <Form.Control.Feedback
                       type="invalid"
@@ -254,30 +253,16 @@ export default function Register() {
               </Row>
             </Container>
 
-            {Name ||
-            Birthdate ||
-            CPF ||
-            Zip ||
-            Address ||
-            HouseNumber ||
-            City ||
-            State !== "" ? (
-              <div>
-                <a href="/">Back</a>
+            {Name && Birthdate && CPF && Zip && Address ? (
+              <div className={styles.form_actions}>
+                <a className={styles.form_link} href="/">Back</a>
 
                 <Button
                   className={styles.form_button}
                   variant="primary"
                   type="submit"
-                  disabled
-                >
-                  Submit
-                </Button>
-
-                <Button
-                  className={styles.form_button}
-                  variant="primary"
-                  type="submit"
+                  href="/"
+                  onClick={LocalStorage}
                 >
                   Submit
                 </Button>

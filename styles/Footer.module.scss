@@ -21,10 +21,22 @@
 
 @media (max-width: 869px) { 
   .footer {
-    width: 900px;
+    width: 1000px;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    width: 1000px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: 40px;
   }
 }

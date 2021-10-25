@@ -190,7 +190,15 @@
 
 @media (max-width: 869px) { 
   .main {
-    width: 900px;
+    width: 1000px;
+
+     h1 {
+       font-size: 60px;
+     }
+
+     a, input, p, button, div {
+      font-size: 25px;
+     }
   }
   .introduction {
     &_header {
@@ -208,7 +216,7 @@
   
     &_container {
       background-image: linear-gradient(to left, #ffffff, #ffffff00);
-      padding: 6rem 8rem 6rem 30rem;
+      padding: 6rem 6rem 6rem 30rem;
       text-align: end;
     }
   }

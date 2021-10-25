@@ -1,0 +1,63 @@
+.main h1 {
+  padding: 2rem 8rem;
+}
+
+.form {
+  background-color: #badc58;
+  background-image: url("/images/undraw_diet_ghvw.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: scroll;
+
+  &_glass {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    &_label {
+      color: #1d164d;
+      font-weight: 700;
+    }
+  }
+
+  &_button {
+    color: #badc58;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    background-color: #ffffff;
+  }
+}
+
+.alert {
+  background-color: #ce7782;
+  padding: 1rem;
+  border-radius: 3px;
+  color: #c9001b;
+  font-weight: 700;
+  border: 1px solid #c9001b;
+}
+
+@media (max-width: 869px) {
+  .main {
+    width: 1000px;
+  }
+}

@@ -122,7 +122,7 @@ Seguintes pessoas contribuíram para este projeto:
       <a href="https://github.com/danielafarias">
         <img src="https://avatars.githubusercontent.com/u/79869120?v=4" width="100px;" alt="Foto da Daniela Farias no GitHub"/><br>
         <sub>
-          <b>Daniela Farias [Front-end]</b>
+          <b>Daniela Farias</b>
         </sub>
       </a>
     </td>

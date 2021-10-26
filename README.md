@@ -10,7 +10,7 @@
 ![tynner](public/images/icon2.svg)
 
 
-> Healthy Food é uma aplicação feita com React, Next, TypeScript e Bootstrap; Para o consumo da API ViaCEP foi utilizado Axios.
+> Healthy Food é uma aplicação feita com React, Next, TypeScript, Sass e Bootstrap; Para o consumo da API ViaCEP foi utilizado Axios.
 
 ### 💚 Ajustes e melhorias
 
@@ -31,6 +31,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - Next.js
 - React  
 - Bootstrap
+- Sass
 - Axios
 
 ## 💻 Pré-requisitos

@@ -14,6 +14,10 @@ export default function Formulary() {
 
   const [completeAddress, setCompleteAddress] = React.useState([]);
 
+  var d = new Date();
+  d.setTime(d.getTime() + 5 * 24 * 60 * 60 * 1000);
+  var expires = "expires=" + d.toUTCString();
+
   const LocalStorage = async () => {
     localStorage.setItem("Nome", Name);
     localStorage.setItem("Data de Nascimento", Birthdate);
@@ -22,6 +26,14 @@ export default function Formulary() {
     localStorage.setItem("Endereço", Address);
     localStorage.setItem("Cidade", City);
     localStorage.setItem("Estado", State);
+
+    document.cookie = "Nome" + "=" + Name + "; " + expires;
+    document.cookie = "Data de Nascimento" + "=" + Birthdate + "; " + expires;
+    document.cookie = "CPF" + "=" + CPF + "; " + expires;
+    document.cookie = "CEP" + "=" + Zip + "; " + expires;
+    document.cookie = "Endereço" + "=" + Address + "; " + expires;
+    document.cookie = "Cidade" + "=" + City + "; " + expires;
+    document.cookie = "Estado" + "=" + State + "; " + expires;
   };
 
   const ZipCode = () => {
